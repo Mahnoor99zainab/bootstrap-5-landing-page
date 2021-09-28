@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/9f03.js"></script>
     <link rel="stylesheet" href="style.css";>
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="container mb-3">
+    <div class="container ">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
           <a href="#" class="navbar-brand"><span class="text-primary">Westin</span></a>
-
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -22,6 +30,9 @@
               </li>
               <li class="nav-item">
                 <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Resume" class="nav-link">Resume</a>
               </li>
               <li class="nav-item">
                 <a href="#services" class="nav-link">Services</a>
@@ -35,17 +46,19 @@
     </div>
         </nav>
 
-        <section
-        class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start mb-2"
+        <section id="home"
+        class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start  "
       >
-        <div class="container">
-          <div class="d-sm-flex align-items-center justify-content-between">
+      <div class="bg-image" style="background-image: url('https://wallpaperaccess.com/full/349872.jpg');
+          height:400px; ">
+        <div class="container my-4 p-4">
+          <div class="d-sm-flex align-items-center justify-content-between my-4">
             <img
-            class="img-fluid  d-none d-sm-block"
+            class="img-fluid  d-none d-sm-block me-4"
             src="small.jpg"
             alt=""
             width="200px"
-            height="200px"
+            height="400px"
           />
             <div>
               <h1>Become a <span class="text-warning"> Web Developer </span></h1>
@@ -68,10 +81,11 @@
             />
           </div>
         </div>
+        </div>
       </section>
 
 
-      <section class="bg-dark text-light p-5 mb-2">
+      <section id="about"class="bg-dark text-light p-5 ">
           <div class="container" >
             <div class="d-md-flex justify-content-between align-items-center">
                 <div class="row-md">
@@ -80,13 +94,22 @@
         <p class="text-start">Degree : Software engineering</p>
         <p class="text-start">City : Rawalpindi</p> 
         <p class="text-start">Phone : 000000</p>
+        <div> 
+          <a href=https://www.facebook.com><i class="bi bi-facebook me-2"></i></a>
+          <a href=https://www.instagram.com><i class="bi bi-instagram me-2"></i></a>
+          <a href=https://telegram.org><i class="bi bi-telegram me-2"></i></a>
+          <a href=https://www.google.com><i class="bi bi-google me-2"></i></a>
+          <a href=https://www.linkedin.com><i class="bi bi-linkedin me-2"></i></a>
+          
+        </div>
+       
         </div>
         <div class="d-flex flex-row-reverse bd-highlight">
           <div class="p-2 bd-highlight">
             
               <div class="card bg-secondary text-white">
-                <div class="card-body">
-                  <h1 class="text-primary">649  </h1>
+                <div class="card-body  ">
+                  <h1 class="text-primary">649</h1>
                <p> HELLO</p>        
 
 
@@ -110,14 +133,17 @@
 
     </section>
 
-  <section class="bg-dark text-light p-5 mb-2">
+  <section id="Resume" class="bg-dark text-light p-5 ">
 
 <div class="container">
-<h1 class="text-center">Resume</h1>
+  <p class= "text-center text-info">Avaliable for Freelancer</p>
+<h1 class="text-center mb-5">Resume</h1>
 <div class="d-sm-flex align-items-center justify-content-between">
   <div class="row">
-    <div class="col-sm-6">
+    <h4 class="">Education</h4>
+    <div class="col-sm-6">  
         <div class="card bg-secondary text-light">
+         
         <div class="card-body">
           <h5 class="card-title text-warning">Master in computer science</h5>
           <p class="card-text">The Master of Computer Science (MCS) is a degree program that includes advanced coursework in artificial intelligence, databases, interactive computing, software engineering, scientific computing, and high-performance computing</p>
@@ -163,8 +189,9 @@
 
   </section>
 
-  <section class="p-5 mb-3 bg-dark text-light">
+  <section id="services"class="p-5  bg-dark text-light">
     <div class="container">
+      <p class= "text-center text-info">best features</p>
      <h1 class="text-center">Services</h1>
      <div class="d-sm-flex align-items-center justify-content-between">
       <div class="row text-center g-4">
@@ -173,9 +200,9 @@
           <div class="card bg-secondary text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <i class="bi bi-music-note-beamed"></i>
+                <i class=" text-info bi bi-music-note-beamed"></i>
               </div>
-              <h3 class="card-title mb-3">Music</h3>
+              <h3 class="card-title mb-3 ">Music</h3>
               <p class="card-text">
                Computer Science is the study of computers and computational systems. Unlike electrical and computer engineers
               </p>
@@ -187,7 +214,7 @@
           <div class="card bg-secondary text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <i class="bi bi-megaphone"></i>
+                <i class=" text-info bi bi-megaphone"></i>
               </div>
               <h3 class="card-title mb-3">Digital Marketing</h3>
               <p class="card-text">
@@ -201,7 +228,7 @@
           <div class="card bg-secondary text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <i class="bi bi-window"></i>
+                <i class=" text-info bi bi-window"></i>
               </div>
               <h3 class="card-title mb-3">App development</h3>
               <p class="card-text">
@@ -214,13 +241,13 @@
        
 </div> 
 
-<div class="row text-center g-4">
+<div class="row text-center g-4"></div>
         
   <div class="col-md">
     <div class="card bg-secondary text-light">
       <div class="card-body text-center">
         <div class="h1 mb-3">
-          <i class="bi bi-laptop"></i>
+          <i class=" text-info bi bi-laptop"></i>
         </div>
         <h3 class="card-title mb-3">Web Design</h3>
         <p class="card-text">
@@ -235,7 +262,7 @@
     <div class="card bg-secondary text-light">
       <div class="card-body text-center">
         <div class="h1 mb-3">
-          <i class="bi bi-palette"></i>
+          <i class=" text-info bi bi-palette"></i>
         </div>
         <h3 class="card-title mb-3">Graphic Design</h3>
         <p class="card-text">
@@ -249,7 +276,7 @@
     <div class="card bg-secondary text-light">
       <div class="card-body text-center">
         <div class="h1 mb-3">
-          <i class="bi bi-brush"></i>
+          <i class=" text-info bi bi-brush"></i>
         </div>
         <h3 class="card-title mb-3">Brand</h3>
         <p class="card-text">
@@ -260,9 +287,80 @@
     </div>
   </div>
   </div>
-       
+</div>
 
   </section>
+  
+  <section id="contact" class="p-5  bg-dark text-light">
+   
+      <div class="d-md-flex justify-content-between align-items-center">
+        <div class="container">
+          <h5 class="text-center text-info">Get In Touch</h5>
+          <h1 class="text-center">Contact</h1>
+          <div class="row">
+            <div class="col ">
+             <i class= " ms-5 text-info bi bi-envelope-open"></i>
+             <h5 class="mt-3 ms-4">Mail Me</h5>
+             <p>email@gmail.com</p>
+            </div>
+            <div class="col-8 text-center">
+              <i class= " ms-4 text-info bi bi-telephone"></i>
+              <h5 class="mt-3 ms-2">Call Us On </h5>
+              <p class=" ">+92333 456788</p>
+            </div>
+            <div class="col-sm">
+              <i class= " ms-5 text-info bi bi-geo-alt-fill"></i>
+              <h5 class="mt-3 ms-2">Visit Office</h5>
+              <p class="me-5">st#3,Rawalpindi,pk </p>
+            </div>
+
+            
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-3 " >
+  <div class="col  ">
+    <input  type="text" class="form-control " placeholder="First name" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Your Email" aria-label="your email">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Phone number" aria-label="phone number">
+  </div>
+</div>
+<div class="mb-3">
+  <textarea class="form-control" placeholder="Your Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="col-auto">
+  <button type="submit" class="btn btn-info mb-3">Send Message</button>
+</div>
+ </section>
+
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <h1>www.DownloadThemes.com</h1>
+      <div> 
+        <a href=https://www.facebook.com><i class="bi bi-facebook me-2"></i></a>
+        <a href=https://www.instagram.com><i class="bi bi-instagram me-2"></i></a>
+        <a href=https://telegram.org><i class="bi bi-telegram me-2"></i></a>
+        <a href=https://www.google.com><i class="bi bi-google me-2"></i></a>
+        <a href=https://www.linkedin.com><i class="bi bi-linkedin me-2"></i></a>
+        
+      </div>
+     
+      <p class="lead">Copyright &copy; 2021.Template has been designed by<a href=https://www.retrina.com> Retrina</a></p>
+
+      
+    </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     
